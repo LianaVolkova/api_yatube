@@ -1,6 +1,9 @@
 ### Описание проекта:
 
-Проект «API для Yatube»
+Проект API для Yatube
+Это продолжение проекта Yatube - блога для публикации постов, комментирования и подписок на избранных авторов. 
+К Yatube добавили API, чтобы появилась возможность обращаться к нему и делать запросы.
+Также для проекта разработана документация. При запуске можно перейти на /redoc, чтобы с ней ознакомиться.
 
 ### Как запустить проект:
 
@@ -17,15 +20,15 @@ cd api_final_yatube
 Cоздать и активировать виртуальное окружение:
 
 ```
-python -m venv env
+python3 -m venv env
 ```
 
 ```
-source venv/Scripts/activate
+source env/bin/activate
 ```
 
 ```
-python -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 ```
 
 Установить зависимости из файла requirements.txt:
@@ -37,13 +40,13 @@ pip install -r requirements.txt
 Выполнить миграции:
 
 ```
-python manage.py migrate
+python3 manage.py migrate
 ```
 
 Запустить проект:
 
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 ### Примеры запросов:
