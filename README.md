@@ -20,52 +20,82 @@
 
 Клонировать репозиторий и перейти в него в командной строке:
 
-``` git clone git@github.com:LianaVolkova/api_final_yatube.git ```
+``` 
+git clone git@github.com:LianaVolkova/api_final_yatube.git
+```
 
-``` cd api_final_yatube ```
+``` 
+cd api_final_yatube
+```
 
 Cоздать и активировать виртуальное окружение:
 
-``` python -m venv env ```
+``` 
+python -m venv env
+```
 
-``` source venv/Scripts/activate ```
+``` 
+source venv/Scripts/activate
+```
 
-``` python -m pip install --upgrade pip ```
+``` 
+python -m pip install --upgrade pip
+```
 
 Установить зависимости из файла requirements.txt:
 
-``` pip install -r requirements.txt ```
+``` 
+pip install -r requirements.txt
+```
 
 Выполнить миграции:
 
-``` python manage.py migrate ```
+``` 
+python manage.py migrate
+```
 
 Запустить проект:
 
-``` python manage.py runserver ```
+``` 
+python manage.py runserver
+```
 
 ### Примеры запросов:
 
 Получить список всех постов:     
-``` GET /api/v1/posts/ ```  
+``` 
+GET /api/v1/posts/
+```  
 
 Добавление нового поста:  
-``` POST /api/v1/posts/ ```   
+``` 
+POST /api/v1/posts/
+```   
 
 Получить список всех групп:  
-``` GET /api/v1/groups/ ```  
+``` 
+GET /api/v1/groups/
+```  
 
 Добавление нового комментария:  
-``` POST /api/v1/posts/{post_id}/comments/ ```  
+``` 
+POST /api/v1/posts/{post_id}/comments/
+```  
 
 Удаление комментария по id:  
-``` DELETE /api/v1/posts/{post_id}/comments/{id}/ ```
+``` 
+DELETE /api/v1/posts/{post_id}/comments/{id}/
+```
 
 Получение списока подписок:  
-``` GET /api/v1/follow/ ```  
+``` 
+GET /api/v1/follow/
+```  
 
 Подписка пользователя на пользователя переданного в запросе:  
-``` POST /api/v1/follow/ ```
+``` 
+POST /api/v1/follow/
+```
 
 #### Полный список запросов API находятся в документации
 
